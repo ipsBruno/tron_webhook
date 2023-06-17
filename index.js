@@ -69,7 +69,7 @@ function getLatestLocalBlock() {
 
 // Funcao para salvar bloco atual no disco
 function setLatestLocalBlock(number) {
-    return fs.writeFileSync('latestBlock.log', number)
+    return fs.writeFileSync('latestBlock.log', number.toString())
 }
 
 // Funcao para ler o bloco atual
